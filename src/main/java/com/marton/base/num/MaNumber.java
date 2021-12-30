@@ -1,4 +1,4 @@
-package main.java.com.marton.base.num;
+package com.marton.base.num;
 
 /**
  * @author ：zhangp
