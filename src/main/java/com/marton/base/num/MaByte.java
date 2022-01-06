@@ -7,10 +7,14 @@ package com.marton.base.num;
 public class MaByte extends MaNumber {
 
     public static void main(String[] args) {
-            Byte bye = new Byte("100");
 
+        Byte bye = new Byte("100");
 
+        // 缓存
 
+        // 拆箱装箱 valueOf
+
+        // parseByte
 
     }
 
