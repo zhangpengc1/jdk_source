@@ -10,6 +10,9 @@ import java.util.concurrent.Semaphore;
  * <p>
  * acquire 获取许可，获取到许可就可以继续执行，没有获取到许可就等待呗
  * release 释放获取到的许可
+ *
+ * state < 0 阻塞
+ * > 0 释放
  */
 public class SemphoreDemo {
 

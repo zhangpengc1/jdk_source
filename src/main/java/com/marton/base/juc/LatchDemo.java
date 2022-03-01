@@ -3,7 +3,6 @@ package com.marton.base.juc;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 /**
  * 闭锁 Latch，基于AQS实现
