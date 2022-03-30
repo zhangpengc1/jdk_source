@@ -3,6 +3,11 @@ package com.marton.base.juc.queue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 
+/**
+ * 优先级阻塞队列
+ *
+ * 其实内部就是一个二叉堆
+ */
 public class PriorityQueue_Demo {
 
     private static BlockingQueue<MyPriorityTask> blockingQueue = new PriorityBlockingQueue<>();
