@@ -9,16 +9,12 @@ import java.util.ServiceLoader;
  */
 public class Spi_Test {
 
-
     public static void main(String[] args) {
-        ServiceLoader<IShout> shouts = ServiceLoader.load(IShout.class);
+        ServiceLoader<Car> cars = ServiceLoader.load(Car.class);
 
-        for (IShout s : shouts) {
-            s.shout();
+        for (Car s : cars) {
+            s.run();
         }
-
-
-
     }
 
 }

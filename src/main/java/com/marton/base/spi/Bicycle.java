@@ -5,10 +5,10 @@ package com.marton.base.spi;
  * @Date ：2022/4/8 上午10:35
  * @desc : 
  */
-public class Dog implements IShout{
+public class Bicycle implements Car {
 
     @Override
-    public void shout() {
-        System.out.println("Dog shout");
+    public void run() {
+        System.out.println("Bicycle Run...");
     }
 }

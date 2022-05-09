@@ -13,5 +13,17 @@ public class Sds {
 
     private char[] buf;
 
+    public static void main(String[] args) {
+
+
+        String hello = new String("je;;;p");
+        System.out.println(hello.toString());
+
+        hello = "sssss";
+
+        System.out.println(hello.hashCode());
+
+    }
+
 
 }

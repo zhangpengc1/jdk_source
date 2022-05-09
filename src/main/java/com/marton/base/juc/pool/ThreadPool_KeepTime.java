@@ -17,30 +17,24 @@ public class ThreadPool_KeepTime {
 
         System.out.println("预热线程数：" + ((ThreadPoolExecutor) executorService).getPoolSize());
         // 先预热
-        for (int i = 0; i < 5; i++) {
-            executorService.execute(new Runnable() {
-                @Override
-                public void run() {
-//                    try {
-//                        Thread.sleep(100);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-                    System.out.println("预热线程数：" + ((ThreadPoolExecutor) executorService).getPoolSize());
+//        for (int i = 0; i < 5; i++) {
+//            executorService.execute(new Runnable() {
+//                @Override
+//                public void run() {
+//                    System.out.println("预热线程数：" + ((ThreadPoolExecutor) executorService).getPoolSize());
+//
+//                }
+//            });
+//        }
 
-                }
-            });
+
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-
-
-                            try {
-                        Thread.sleep(100);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
         BlockingQueue<Runnable> queue = ((ThreadPoolExecutor) executorService).getQueue();
         System.out.println(queue.size());
-
 
 
     }

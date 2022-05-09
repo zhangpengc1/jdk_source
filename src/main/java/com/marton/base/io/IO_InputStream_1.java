@@ -21,7 +21,7 @@ public class IO_InputStream_1 {
         try {
             long start = System.currentTimeMillis();
 
-            InputStream inputStream = new FileInputStream("/Users/zhangpeng/Desktop/hello");
+            InputStream inputStream = new FileInputStream("/Users/zhangpeng/Desktop/java");
 
             int i = 0;
             while ((i = inputStream.read()) != -1) {

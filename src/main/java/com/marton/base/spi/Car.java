@@ -7,9 +7,9 @@ package com.marton.base.spi;
  * @description: TODO
  * @date 2022/4/8  上午10:30
  */
-public interface IShout {
+public interface Car {
 
-    void shout();
+    void run();
 
 }
 
