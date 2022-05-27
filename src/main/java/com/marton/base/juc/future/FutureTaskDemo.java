@@ -12,13 +12,10 @@ public class FutureTaskDemo {
             public Object call() throws Exception {
 
                 Thread.sleep(1);
-
                 //System.out.println("hello");
-
                 return "hello";
             }
         });
-
 
         Thread thread = new Thread(task);
         thread.start();

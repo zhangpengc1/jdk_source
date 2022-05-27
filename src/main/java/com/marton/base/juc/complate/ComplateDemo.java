@@ -10,17 +10,13 @@ public class ComplateDemo {
         CompletableFuture<MyPacket> completableFuture = CompletableFuture.supplyAsync(() -> {
 
             MyPacket myPacket = new MyPacket();
-
             // 发request
             String request = myPacket.getRequest();
             // 处理response
 
-
             return myPacket;
         });
 
-
-//        String join = voidCompletableFuture.get();
 
         MyPacket myPacket = completableFuture.join();
 
